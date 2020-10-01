@@ -57,7 +57,7 @@ client.connect((err) => {
       console.log("Add order")
     const order = req.body;
     ordersCollection.insertOne(order).then((result) => {
-      console.log(result.insertedCount);
+     
       res.send(result.insertedCount > 0);
     });
   });
